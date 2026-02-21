@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(-45deg, #2193b0, #6dd5ed, #2980b9, #2c3e50);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+    color: white;
+}
+
+/* Animated Background */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    width: 380px;
+    margin: 60px auto;
+    padding: 30px;
+    backdrop-filter: blur(20px);
+    background: rgba(255,255,255,0.15);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    transition: 0.4s;
+}
+
+/* Logo */
+.logo {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    font-size: 14px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+/* Search */
+.search-box input {
+    padding: 10px;
+    width: 65%;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.search-box button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    background: white;
+    color: #2c3e50;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background: #f1f1f1;
+    transform: scale(1.05);
+}
+
+/* Buttons */
+.btn-group {
+    margin-top: 15px;
+}
+
+.btn-group button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    background: rgba(255,255,255,0.3);
+    color: white;
+    transition: 0.3s;
+}
+
+.btn-group button:hover {
+    background: rgba(255,255,255,0.5);
+}
+
+/* Weather Result */
+#weatherResult {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Forecast Cards */
+#forecast {
+    margin-top: 15px;
+}
+
+.forecast-day {
+    display: inline-block;
+    background: rgba(255,255,255,0.25);
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.forecast-day:hover {
+    transform: scale(1.1);
+    background: rgba(255,255,255,0.4);
+}
+
+/* Dark Mode */
+.dark {
+    background: #111 !important;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+}
